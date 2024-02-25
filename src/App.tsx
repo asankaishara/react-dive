@@ -5,6 +5,7 @@ import {useState} from "react";
 import TestRef from "./testing/ref/TestRef.tsx";
 import TestDebounce from "./testing/debounce/TestDebounce.tsx";
 import ImperativeHandle from "./testing/imperative-handle/ImperativeHandle.tsx";
+import UseTransition from "./testing/useTransition/UseTransition.tsx";
 
 function App() {
     const [ratingValue, setRatingValue] = useState<number | null>(null);
@@ -20,7 +21,8 @@ function App() {
             <Button disabled={isDisabled} variant="contained">Submit</Button>*/}
             {/*<TestRef/>*/}
             {/*<TestDebounce/>*/}
-            <ImperativeHandle/>
+            {/*<ImperativeHandle/>*/}
+            <UseTransition/>
         </Box>
     )
 }
