@@ -7,6 +7,7 @@ import TestDebounce from "./testing/debounce/TestDebounce.tsx";
 import ImperativeHandle from "./testing/imperative-handle/ImperativeHandle.tsx";
 import UseTransition from "./testing/useTransition/UseTransition.tsx";
 import UseDeferredValue from "./testing/deferred-value/UseDeferredValue.tsx";
+import LocalStorageIndex from "./testing/localStorage/LocalStorageIndex.tsx";
 
 function App() {
     const [ratingValue, setRatingValue] = useState<number | null>(null);
@@ -24,7 +25,8 @@ function App() {
             {/*<TestDebounce/>*/}
             {/*<ImperativeHandle/>*/}
             {/*<UseTransition/>*/}
-            <UseDeferredValue/>
+            {/*<UseDeferredValue/>*/}
+            <LocalStorageIndex/>
         </Box>
     )
 }
