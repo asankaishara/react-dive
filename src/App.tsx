@@ -6,6 +6,7 @@ import TestRef from "./testing/ref/TestRef.tsx";
 import TestDebounce from "./testing/debounce/TestDebounce.tsx";
 import ImperativeHandle from "./testing/imperative-handle/ImperativeHandle.tsx";
 import UseTransition from "./testing/useTransition/UseTransition.tsx";
+import UseDeferredValue from "./testing/deferred-value/UseDeferredValue.tsx";
 
 function App() {
     const [ratingValue, setRatingValue] = useState<number | null>(null);
@@ -22,7 +23,8 @@ function App() {
             {/*<TestRef/>*/}
             {/*<TestDebounce/>*/}
             {/*<ImperativeHandle/>*/}
-            <UseTransition/>
+            {/*<UseTransition/>*/}
+            <UseDeferredValue/>
         </Box>
     )
 }
